@@ -1,0 +1,219 @@
+:root {
+    --primary-light: #8e8aff;
+    --primary: #655dff;
+    --primary-dark: #4f46f8;
+    --secondary: #17c9ff;
+    --alert: #ff6a96;
+    --greyLight-1: #e0ecf7;
+    --greyLight-2: #c8dbf0;
+    --greyDark-1: #92acc4;
+    --greyDark-2: #5a768f;
+}
+
+.main-container-pay{
+    height: 85vh;
+}
+
+.container-pay {
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.payment {
+    margin-top: 150px;
+    border-radius: 0.8rem;
+    background-color: #7ab4dd;
+    display: grid;
+    grid-template-columns: 32rem 24.8rem;
+    padding: 2rem;
+    grid-gap: 6rem;
+    align-items: center;
+    position: relative;
+}
+
+.payment__dots {
+    position: absolute;
+    top: 0.5rem;
+    left: 4rem;
+}
+
+.payment__shadow-dots {
+    position: absolute;
+    top: 0.5rem;
+    left: 4rem;
+    width: 6.5rem;
+    height: 11.5rem;
+    background: linear-gradient(to bottom, #e0ecf700 0%, #ffffff 100%);
+    z-index: 200;
+}
+
+.card-pay {
+    width: 32rem;
+    height: 20rem;
+    border-radius: 1rem;
+    padding: 0 2rem;
+    color: #ffffff;
+    background: linear-gradient(to bottom, var(--secondary) 0%, var(--primary) 50%);
+    box-shadow: -0.6rem 0.6rem 1.8rem rgba(79, 70, 248, 0.24);
+    border: 1px solid #ffffff;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+    position: relative;
+}
+
+.card__visa .visa{
+    justify-self: flex-end;
+    width: 5.5rem;
+    position: absolute;
+    top: -40%;
+    left: 400px;
+}
+
+
+.card__number {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.8rem;
+    letter-spacing: 0.12rem;
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+}
+
+.card__name h3 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    margin-bottom: 0.8rem;
+    font-weight: 300;
+}
+
+.card__name p {
+    font-size: 1.4rem;
+}
+
+.card__expiry h3 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    margin-bottom: 0.8rem;
+    font-weight: 300;
+}
+
+.card__expiry p {
+    font-size: 1.4rem;
+}
+
+.form-pay {
+    display: grid;
+    grid-template-columns: repeat(2, 11rem);
+    grid-template-rows: repeat(5, min-content);
+    grid-gap: 2.8rem 1.2rem;
+    color: var(--greyDark-2);
+}
+.form-pay h2 {
+    font-size: 2rem;
+    grid-column: 1 / 3;
+    line-height: 0;
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+}
+
+.form__detail {
+    position: relative;
+    padding-bottom: 0.6rem;
+    color: var(--greyDark-1);
+}
+
+.form__name {
+    grid-column: 1 / 3;
+}
+
+.form__number {
+    grid-column: 1 / 3;
+}
+
+.form__expiry {
+    grid-column: 1 / 2;
+}
+
+.form__cvv {
+    margin-right: 0px;
+    grid-column: 2 / 3;
+    justify-self: flex-end;
+}
+.form__expiry{
+    width: 10px;
+}
+.form__btn {
+    grid-column: 1;
+    height: 3.8rem;
+    border-radius: 0.6rem;
+    border: none;
+    background: var(--primary);
+    color: #ffffff;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1.6rem;
+    justify-self: stretch;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.form__btn:focus {
+    outline: none;
+}
+
+.form__btn:hover {
+    background: var(--primary-dark);
+}
+
+input {
+    padding: 1rem;
+    border: 1px solid var(--greyLight-2);
+    border-radius: 0.6rem;
+    background: transparent;
+    color: #fff;
+    font-family: inherit;
+    font-size: 1.4rem;
+}
+
+input::placeholder {
+    color: var(--greyLight-1);
+    font-size: inherit;
+    letter-spacing: 0.12rem;
+}
+
+input:focus {
+    outline: none;
+}
+
+input:hover {
+    border: 1px solid var(--primary-light);
+}
+
+label {
+    font-size: 1.4rem;
+    padding: 0 0 1rem 0;
+    line-height: 1;
+    color: #fff;
+}
+
+.alert {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+    color: var(--alert);
+    margin-top: 0.6rem;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+}
+
+.dribbble {
+    position: fixed;
+    font-size: 36px;
+    right: 20px;
+    bottom: 20px;
+    color: #EA4C89;
+}

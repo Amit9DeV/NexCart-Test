@@ -1,0 +1,99 @@
+/* Container for centering the form */
+.container-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: transparent;
+  }
+  
+  /* Wrapper around the form */
+  .form-container {
+    width: 100%;
+    max-width: 400px; /* Adjusted width for a better fit */
+    margin: 0 auto; /* Center the form horizontally */
+  }
+  
+  /* Form styling */
+  .form {
+    background-color: rgb(236, 237, 237);
+    padding: 24px; /* Ample padding for a clean look */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  /* Form title */
+  .form-title {
+    font-size: 24px; /* Larger font size for emphasis */
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 24px; /* Space below the title */
+  }
+  
+  /* Input field container */
+  .input-container {
+    margin-bottom: 16px; /* Space between input fields */
+  }
+  
+  .form-group input{
+    border: 1px solid black;
+  }
+
+  /* Label styling */
+  .input-label {
+    display: block;
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 5px; /* Space below the label */
+    color: #4a5568; /* Dark gray color */
+  }
+  
+  /* Input styling */
+  .input-field {
+    width: 100%;
+    padding: 12px; /* Comfortable padding */
+    border-radius: 4px;
+    border: 1px solid #e2e8f0;
+    font-size: 14px;
+    color: #4a5568;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .input-field:focus {
+    outline: none;
+    border-color: #4299e1; /* Blue border on focus */
+    box-shadow: 0px 0px 0px 3px rgba(66, 153, 225, 0.2);
+  }
+  
+  /* Button styling */
+  .submit-button {
+    background-color: #4299e1;
+    color: white;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Full-width button */
+  }
+  
+  .submit-button:hover {
+    background-color: #3182ce;
+  }
+  
+  /* Forgot password link styling */
+  .forgot-password {
+    font-size: 14px;
+    color: #4299e1;
+    text-align: right;
+    display: block;
+    margin-top: 8px;
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .forgot-password:hover {
+    color: #2b6cb0;
+    text-decoration: underline;
+  }
+  

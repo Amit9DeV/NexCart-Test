@@ -1,0 +1,104 @@
+/* Container for centering the form */
+.container-register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: transparent;
+    background-image: linear-gradient(-225deg, #77FFD2 0%, #6297DB 48%, #1EECFF 100%);
+    background-color: transparent;
+}
+
+/* Wrapper around the form */
+.form-wrapper {
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Form styling */
+.form {
+    background-color: rgb(236, 229, 229);
+    padding: 32px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+/* Form title */
+.form-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 24px;
+}
+.form-group input{
+
+  }
+
+/* Form groups for input fields */
+.form-group {
+    margin-bottom: 16px;
+}
+
+/* Label styling */
+.form-group label {
+    display: block;
+    font-size: 19px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #4a5568;
+}
+
+/* Input styling */
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid black;
+    font-size: 11px;
+    color: #4a5568;
+    transition: box-shadow 0.2s ease;
+}
+
+.form-group input:focus {
+    outline: none;
+    box-shadow: 0px 0px 0px 3px rgba(66, 153, 225, 0.5);
+}
+
+/* Button styling */
+.btn {
+    background-color: #4299e1;
+    color: white;
+    font-weight: bold;
+    padding: 10px 16px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #3182ce;
+}
+
+/* Link styling */
+.forgot-link {
+    font-size: 14px;
+    color: #4299e1;
+    text-align: right;
+    display: block;
+    margin-top: 8px;
+}
+
+.forgot-link:hover {
+    color: #2b6cb0;
+    text-decoration: underline;
+}
+
+/* Flexbox styling for form footer */
+.form-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+}
